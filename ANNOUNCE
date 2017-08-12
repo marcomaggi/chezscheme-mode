@@ -1,0 +1,36 @@
+Subject: [announce] Chez Scheme Emacs mode 0.1.0
+
+			    Chez Scheme Mode
+			    ================
+
+
+This  package is  a distribution  of  Emacs Lisp  files implementing  an
+editing mode  for Chez Scheme under  GNU Emacs.  Chez Scheme  is an R6RS
+compliant Scheme implementation in the form of a native compiler.
+
+  This package makes use of the GNU Autotools.
+
+  Development of Chez Mode takes place at:
+
+	    <http://github.com/marcomaggi/chezscheme-mode/>
+
+development of Chez Scheme takes place at:
+
+		 <http://github.com/cisco/ChezScheme/>
+
+  The last  time the author  bothered to  update this paragraph,  he had
+tested Chez Scheme version 9.4.1 and GNU Emacs 25.2.1.
+
+
+Notes for revision 0.1.0
+------------------------
+
+* Initial stuff.  Still rough.
+
+
+### end of file
+# Local Variables:
+# mode: text
+# fill-column: 72
+# paragraph-start: "*"
+# End:

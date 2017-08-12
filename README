@@ -1,0 +1,142 @@
+-*- coding: utf-8-unix -*-
+
+			    Chez Scheme Mode
+			    ================
+
+
+Topics
+------
+
+  1. Introduction
+  2. License
+  3. Install
+  4. Usage
+  A. Credits
+  B. Bugs, vulnerabilities and contributions
+  C. Resources
+
+
+1. Introduction
+---------------
+
+This  package is  a distribution  of  Emacs Lisp  files implementing  an
+editing mode  for Chez Scheme under  GNU Emacs.  Chez Scheme  is an R6RS
+compliant Scheme implementation in the form of a native compiler.
+
+  This package makes use of the GNU Autotools.
+
+  The last  time the author  bothered to  update this paragraph,  he had
+tested Chez Scheme version 9.4.1 and GNU Emacs 25.2.1.
+
+
+2. License
+----------
+
+Copyright (c) 2013-2015, 2017 Marco Maggi <marco.maggi-ipsu@poste.it>
+
+This program is free software: you  can redistribute it and/or modify it
+under the  terms of the GNU  General Public License as  published by the
+Free Software Foundation,  either version 3 of the License,  or (at your
+option) any later version.
+
+This program  is distributed  in the  hope that it  will be  useful, but
+WITHOUT   ANY   WARRANTY;  without   even   the   implied  warranty   of
+MERCHANTABILITY  or  FITNESS FOR  A  PARTICULAR  PURPOSE.  See  the  GNU
+General Public License for more details.
+
+You should have received a copy  of the GNU General Public License along
+with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+3. Install
+----------
+
+Before  installing  Chez Scheme  Mode  make  sure  to have  a  correctly
+installed Chez Scheme.
+
+  To install  Chez Scheme Mode  from a  proper release tarball,  we must
+unpack the archive then do:
+
+   $ cd chezscheme-mode-0.1.0
+   $ mkdir build
+   $ cd build
+   $ ../configure
+   $ make
+   $ make install
+
+  To test what a rule will do use the "-n" option; example:
+
+    $ make install -n
+
+  The "Makefile" supports the  "DESTDIR" environment variable to install
+the files under a temporary location; example:
+
+    $ make install DESTDIR=/tmp/chezscheme-mode
+
+  If, instead,  we have checked out  a revision from the  repository, we
+will have  to first build the  infrastructure running a script  from the
+top source directory:
+
+   $ cd chez-mode
+   $ sh autogen.sh
+
+notice that "autogen.sh" will run the program "autoreconf".
+
+  After this the  procedure is the same  as the one for  building from a
+proper release tarball, but we have to enable maintainer mode:
+
+    $ ../configure --enable-maintainer-mode [options]
+    $ make
+    $ make check
+    $ make install
+
+
+4. Usage
+--------
+
+Read the documentation generated from  the Texinfo sources.  The package
+installs the documentation  in Info format; we can  generate and install
+documentation in HTML format by running:
+
+   $ make html
+   $ make install-html
+
+
+A. Credits
+----------
+
+Chez Scheme  Mode was  written by  Marco Maggi,  deriving code  from the
+built-in Scheme mode.
+
+
+B. Bugs, vulnerabilities and contributions
+------------------------------------------
+
+Bug  and vulnerability  reports are  appreciated, all  the vulnerability
+reports  are  public; register  them  using  the  Issue Tracker  at  the
+project's GitHub  site.  For  contributions and  patches please  use the
+Pull Requests feature at the project's GitHub site.
+
+
+C. Resources
+------------
+
+The documentation of Chez Scheme Mode is available online:
+
+	<http://marcomaggi.github.io/docs/chezscheme-mode.html>
+
+development takes place at:
+
+	    <http://github.com/marcomaggi/chezscheme-mode/>
+
+the home page of the Chez Scheme project is at:
+
+		 <http://github.com/cisco/ChezScheme/>
+
+
+### end of file
+# Local Variables:
+# mode: text
+# fill-column: 72
+# paragraph-start: "*"
+# End:

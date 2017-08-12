@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-08-12 07:07:25 marco>
+;; Time-stamp: <2017-08-12 07:17:55 marco>
 ;; Keywords: languages
 
 ;; This file is part of Chez Scheme Mode.
@@ -951,7 +951,7 @@ the others have to have small indentation.
   scheme-mode "Chez Scheme"
   "Major mode for Chez Scheme source code.
 \\{chezscheme-mode-map}"
-  (setq scheme-program-name "chezscheme")
+  (setq scheme-program-name "petite-chez")
   (setq imenu-generic-expression chezscheme-imenu-generic-expression)
   (chezscheme-setup-font-locking)
   (chezscheme-setup-indentation))

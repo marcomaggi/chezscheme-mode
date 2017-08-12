@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-08-12 07:17:55 marco>
+;; Time-stamp: <2017-08-12 10:00:29 marco>
 ;; Keywords: languages
 
 ;; This file is part of Chez Scheme Mode.
@@ -178,9 +178,6 @@ For details on how to use it see `imenu-generic-expression'.")
 \#| end of library |\# )
 
 ;;; end of file
-;; Local Variables:
-;; mode: chezscheme
-;; End:
 "))
 
 ;;; --------------------------------------------------------------------
@@ -190,9 +187,8 @@ For details on how to use it see `imenu-generic-expression'.")
   (concat "
 \
 \#!r6rs
-\(program \(" (chezscheme-p-stripped-file-name) "\)
-  \(import \(chezscheme\)
-    \(checks\)\)
+\(import \(chezscheme\)
+  \(checks\)\)
 
 \(check-set-mode! 'report-failed\)
 \(check-display \"*** testing Chez Scheme libraries: stuff\\n\"\)
@@ -212,12 +208,7 @@ For details on how to use it see `imenu-generic-expression'.")
 
 \(check-report\)
 
-#| end of program |# \)
-
 ;;; end of file
-;; Local Variables:
-;; mode: chezscheme
-;; End:
 "))
 
 ;;; --------------------------------------------------------------------
@@ -227,8 +218,7 @@ For details on how to use it see `imenu-generic-expression'.")
   (concat "
 \
 #!r6rs
-\(program \(" (chezscheme-p-stripped-file-name) "\)
-  \(import \(chezscheme\)\)
+\(import \(chezscheme\)\)
 
 \
 ;;;; code
@@ -237,12 +227,7 @@ For details on how to use it see `imenu-generic-expression'.")
 \
 ;;;; done
 
-#| end of program |# \)
-
 ;;; end of file
-;; Local Variables:
-;; mode: chezscheme
-;; End:
 "))
 
 ;;; --------------------------------------------------------------------

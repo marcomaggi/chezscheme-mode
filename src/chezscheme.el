@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-08-12 10:00:29 marco>
+;; Time-stamp: <2017-08-12 16:01:32 marco>
 ;; Keywords: languages
 
 ;; This file is part of Chez Scheme Mode.
@@ -322,8 +322,11 @@ The argument INDENTATION_PREFIX is a prefix added to the inserted
 text, it should the opening of a line comment."
   (when (not INDENTATION_PREFIX)
     (setq INDENTATION_PREFIX (read-string "Header indentation prefix: ")))
-  (let ((PARTOF			(cdr (assoc (completing-read "Part of: " chezscheme-file-header-part-of-collection)
-					    chezscheme-file-header-part-of-collection)))
+  (let ((PARTOF			(let* ((THING  (completing-read "Part of: " chezscheme-file-header-part-of-collection))
+				       (PARTOF (assoc THING chezscheme-file-header-part-of-collection)))
+				  (if PARTOF
+				      (cdr PARTOF)
+				    THING)))
 	(CREATION_DATE		(format-time-string "%a %b %e, %Y"))
 	(COPYRIGHT_OWNER	(funcall chezscheme-insertions-copyright-owner-full-name-function))
 	(COPYRIGHT_YEAR		(format-time-string "%Y"))

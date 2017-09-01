@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-08-12 16:01:32 marco>
+;; Time-stamp: <2017-09-01 07:51:20 marco>
 ;; Keywords: languages
 
 ;; This file is part of Chez Scheme Mode.
@@ -569,6 +569,7 @@ in the Scheme mode hook."
     (call-with-string-output-port	. 1)
     (call-with-values			. 1)
     (call/cc				. 1)
+    (case*				. 1)
     (condition				. 0)
     (define-condition-type		. 2)
     (error				. 1)

@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-09-01 07:51:20 marco>
+;; Time-stamp: <2017-09-02 07:28:39 marco>
 ;; Keywords: languages
 
 ;; This file is part of Chez Scheme Mode.
@@ -712,6 +712,7 @@ in the Scheme mode hook."
     (receive/checked					. 2)
     (returnable						. 0)
     (record-type-printer-set!				. 1)
+    (syntax-case*					. 2)
     (constructor					. 1)
     (constructor-signature				. 0)
     (destructor						. 1)

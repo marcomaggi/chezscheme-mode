@@ -4,7 +4,7 @@
 
 ;; Author: Marco Maggi <marco.maggi-ipsu@poste.it>
 ;; Created: Tue Dec 10, 2013
-;; Time-stamp: <2017-09-01 07:50:58 marco>
+;; Time-stamp: <2017-09-02 07:28:53 marco>
 ;; Keywords: convenience, data, languages
 
 ;; This file is part of MMUX Home Directory.
@@ -844,6 +844,8 @@ language built ins.")
     ;; "define-syntax*" "define-syntax-rule" "define-auxiliary-syntaxes"
     ;; "define-inline" "define-constant"
     ;; "define-values" "define-constant-values"
+
+    "syntax-case*"
 
     "case-lambda/std" "case-lambda/typed" "case-lambda/checked"
     "named-lambda" "named-lambda/std" "named-lambda/typed" "named-lambda/checked"
